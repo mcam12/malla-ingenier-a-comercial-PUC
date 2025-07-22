@@ -1,1 +1,54 @@
+/* estilos.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff;
+  padding: 20px;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  justify-items: center;
+}
+
+.curso {
+  background-color: #87cefa;
+  border: 2px solid #1e90ff;
+  border-radius: 8px;
+  padding: 15px;
+  width: 160px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.curso.activo {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.curso.aprobado {
+  background-color: #32cd32;
+  color: white;
+  border-color: #228b22;
+}
+
+.semestre {
+  margin-bottom: 30px;
+}
+
+.semestre h2 {
+  text-align: left;
+  margin-bottom: 10px;
+}
 
